@@ -20,7 +20,7 @@
              </bean>
              <!-- Loading static resources -->
                  <mvc:annotation-driven />
-         <mvc:resources mapping="/webapp/**" location="/assets/" cache-period="31556926"/>
+         <mvc:resources mapping="/resources/**" location="/assets/" cache-period="31556926"/>
 
 
   </beans>     
