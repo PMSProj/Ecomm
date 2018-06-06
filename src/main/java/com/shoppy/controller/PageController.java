@@ -10,8 +10,7 @@ public class PageController {
 	
 	@RequestMapping(value={"/","/home","/index"})
     public ModelAndView index(){
-		ModelAndView mv=new ModelAndView("page"); // page is the name of view page  from where the message is going to display
-		                                              // to solve this issue we ARE going to use internal view resolver 
+		ModelAndView mv=new ModelAndView("page"); 
 		mv.addObject("title", "Home");
 		mv.addObject("userClickHome", true);
 		
@@ -20,8 +19,7 @@ public class PageController {
 
 	@RequestMapping(value={"/about"})
     public ModelAndView about(){
-		ModelAndView mv=new ModelAndView("page"); // page is the name of view page  from where the message is going to display
-		                                              // to solve this issue we ARE going to use internal view resolver 
+		ModelAndView mv=new ModelAndView("page"); 
 		mv.addObject("title", "About Us");
 		mv.addObject("userClickAbout", true);
 		
@@ -29,8 +27,7 @@ public class PageController {
 	}
 	@RequestMapping(value={"/contact"})
     public ModelAndView contact(){
-		ModelAndView mv=new ModelAndView("page"); // page is the name of view page  from where the message is going to display
-		                                              // to solve this issue we ARE going to use internal view resolver 
+		ModelAndView mv=new ModelAndView("page"); 
 		mv.addObject("title", "Contact Us");
 		mv.addObject("userClickContact", true);
 		
